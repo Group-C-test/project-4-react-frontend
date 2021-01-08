@@ -3,15 +3,14 @@ import Input from './Input.js';
 
 function Form(props) {
     const [formState, setFormState] = useState({
-    //   title:'',
-    //   author:'',
-    //   phone:''
+      name:'',
+      img_url:'',
     });
 
     useEffect(() => {
       if(props.artist) {
         setFormState({
-        //   title: props.notice.title,
+          name: props.artist.name,
         //   author: props.notice.author,
         //   phone: props.notice.phone,
           id: props.artist.id
@@ -22,7 +21,7 @@ function Form(props) {
   function handleChange(event) {
     setFormState(prevState => ({
       ...prevState,
-      [event.target.id] : event.target.value
+      [event.target.name] : event.target.value
     }));
   }
 
@@ -49,14 +48,6 @@ function Form(props) {
            value={formState.img_url}
            id="img_url"
         />
-        {/* <Input
-          handleChange={handleChange}
-          name="phone"
-          placeholder="Notice Phone"
-          type="text"
-          value={formState.phone}
-          id="phone"
-       /> */}
        <input type="submit" value={props.artist ? 'Edit Artist' : 'Add Artist'}/>
       </form>
     );
