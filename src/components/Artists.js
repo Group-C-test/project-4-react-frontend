@@ -3,7 +3,7 @@ import Artist from './Artist.js';
 function Artists({ artists, handleDelete, handleUpdate }) {
     return (
       <div>
-        {artists.map(artist => 
+        {artists.map(artist  => 
           <Artist
             key={artist.id} 
             artist={artist}
