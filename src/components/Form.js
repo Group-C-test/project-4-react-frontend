@@ -48,6 +48,14 @@ function Form(props) {
            value={formState.img_url}
            id="img_url"
         />
+        <Input
+           handleChange={handleChange}
+           image="quote"
+           placeholder="Artist Quote"
+           type="text"
+           value={formState.quote}
+           id="quote"
+        />
        <input type="submit" value={props.artist ? 'Edit Artist' : 'Add Artist'}/>
       </form>
     );
