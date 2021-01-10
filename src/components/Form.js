@@ -11,8 +11,9 @@ function Form(props) {
       if(props.artist) {
         setFormState({
           name: props.artist.name,
-        //   author: props.notice.author,
-        //   phone: props.notice.phone,
+          img_url: props.artist.img_url,
+          
+
           id: props.artist.id
         })
       }
@@ -21,7 +22,7 @@ function Form(props) {
   function handleChange(event) {
     setFormState(prevState => ({
       ...prevState,
-      [event.target.name] : event.target.value
+      [event.target.id] : event.target.value
     }));
   }
 

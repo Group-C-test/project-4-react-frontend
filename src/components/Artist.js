@@ -26,12 +26,11 @@ function Artist(props) {
         </>
         : <div className="artist">
             <h1>{props.artist.name}</h1>
-            <img src={props.artist.img_url} alt={props.artist.name}/>
+            <img src={props.artist.img_url} alt={props.artist.img}/>
             {props.artist.songs && props.artist.songs.map (songs => 
-            <h2>{songs.name}</h2>
-            // <p>{songs.name.quote}</p>
+            <h2>{songs.quote} <br/> {songs.name}</h2>
             )}
-          
+
             {/* {props.artist.songs.quote && props.artist.songs.quote.map (song =>
             <p>{song.name.quote}</p>
             )} */}
