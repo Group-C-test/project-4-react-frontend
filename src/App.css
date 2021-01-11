@@ -44,3 +44,15 @@
 body {
   font-family: 'Teko', sans-serif;
 }
+h1 {
+  color:red;
+
+}
+input {
+  border-radius: 15px;
+  background-color: white;
+  font-family: Teko;
+  font-size:larger;
+  padding: 10px;
+  
+}
