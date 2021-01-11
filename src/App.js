@@ -51,7 +51,8 @@ function App() {
   
     function handleUpdate(event, formInputs) {
       event.preventDefault();
-      fetch(`/artists/${formInputs.id}`, {
+      console.log("handleupdate", formInputs)
+      fetch(`/songs/${formInputs.id}`, {
         body: JSON.stringify(formInputs),
         method: 'PUT',
         headers: {
