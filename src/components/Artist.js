@@ -25,11 +25,15 @@ function Artist(props) {
         <button onClick={toggleForm}>Cancel</button>
         </>
         : <div className="artist">
-            <h3>{props.artist.name}</h3>
-            <img src={props.artist.img_url} alt={props.artist.name}/>
-            {props.artist.songs && props.artist.songs.map (song => 
-            <p>{song.name}</p>
+            <h1>{props.artist.name}</h1>
+            <img src={props.artist.img_url} alt={props.artist.img}/>
+            {props.artist.songs && props.artist.songs.map (songs => 
+            <h2>{songs.quote} <br/> {songs.name}</h2>
             )}
+
+            {/* {props.artist.songs.quote && props.artist.songs.quote.map (song =>
+            <p>{song.name.quote}</p>
+            )} */}
             <button onClick={() => props.handleDelete(props.artist)}>X</button>
             <button onClick={toggleForm}>Edit This Artist</button>
        </div>

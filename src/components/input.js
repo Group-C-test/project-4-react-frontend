@@ -1,18 +1,19 @@
 function Input({ 
   name, 
-  title, 
-  // type, 
-  // value, 
+  img_url,
+  quote, 
+  type, 
+  value, 
   placeholder, 
   handleChange }) {
     return (
       <>
-        <label htmlFor={name}>{title}</label>
+        <label htmlFor={name}>{quote}</label>
         <input
           id={name}
           name={name}
-          // type={type}
-          // value={value}
+          type={type}
+          value={value}
           onChange={handleChange}
           placeholder={placeholder}
         />

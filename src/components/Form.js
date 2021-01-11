@@ -11,8 +11,9 @@ function Form(props) {
       if(props.artist) {
         setFormState({
           name: props.artist.name,
-        //   author: props.notice.author,
-        //   phone: props.notice.phone,
+          img_url: props.artist.img_url,
+          
+
           id: props.artist.id
         })
       }
@@ -21,7 +22,7 @@ function Form(props) {
   function handleChange(event) {
     setFormState(prevState => ({
       ...prevState,
-      [event.target.name] : event.target.value
+      [event.target.id] : event.target.value
     }));
   }
 
@@ -42,11 +43,19 @@ function Form(props) {
          />
          <Input
            handleChange={handleChange}
-           image="image"
+           name="image"
            placeholder="Artist Img Url"
            type="text"
            value={formState.img_url}
            id="img_url"
+        />
+        <Input
+           handleChange={handleChange}
+           name="quote"
+           placeholder="Artist Quote"
+           type="text"
+           value={formState.quote}
+           id="quote"
         />
        <input type="submit" value={props.artist ? 'Edit Artist' : 'Add Artist'}/>
       </form>

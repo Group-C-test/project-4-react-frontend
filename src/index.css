@@ -3,35 +3,16 @@
 
 body {
   margin: 0;
-  
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
+
+
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
-@media (max-width: 768px) {
-  .container {
-    grid-template-areas:
-      "header"
-      "nav"
-      "content"
-      "aside"
-      "footer";
-    grid-template-columns: 1fr;
-    grid-template-rows:
-      auto /* Header */
-      minmax(200px, auto) /* Nav */
-      1fr /* Content */
-      minmax(75px, auto) /* Sidebar */
-      auto; /* Footer */
-  }
-  nav, aside {
-    margin: 0;
-  }
-  nav {
-    padding: 20px 20%
-  }
+
+
+h1, h2 {
+  text-align: center;
 }
