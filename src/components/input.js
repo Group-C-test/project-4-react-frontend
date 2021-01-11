@@ -12,6 +12,8 @@ function Input({
         <input
           id={name}
           name={name}
+          img_url={img_url}
+          quote={quote}
           type={type}
           value={value}
           onChange={handleChange}
