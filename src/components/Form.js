@@ -43,7 +43,7 @@ function Form(props) {
          />
          <Input
            handleChange={handleChange}
-           name="image"
+           name="img_url"
            placeholder="Artist Img Url"
            type="text"
            value={formState.img_url}

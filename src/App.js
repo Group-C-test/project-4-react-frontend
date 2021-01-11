@@ -21,7 +21,7 @@ function App() {
   }
 
   function handleAdd(event, formInputs) {
-    console.log(formInputs);
+    console.log('handleAdd', formInputs);
     event.preventDefault();
     fetch('/artists', {
       body: JSON.stringify(formInputs),
