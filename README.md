@@ -13,7 +13,7 @@ A fun app with song quotes to wake up to .
 
 
 ## Screenshots
-![wireframe1](imgs/Screen Shot 2021-01-11 at 6.07.12 PM.png)
+![wireframe1](imgs/Screen-Shot.png)
 
 
 ![ERD](imgs/Erd-project-4.jpg)
