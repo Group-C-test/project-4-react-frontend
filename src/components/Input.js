@@ -1,13 +1,14 @@
 function Input({ 
     name, 
-    title, 
+    title,
+    quote, 
     // type, 
     // value, 
     placeholder, 
     handleChange }) {
       return (
         <>
-          <label htmlFor={name}>{title}</label>
+          <label htmlFor={name}>{title}{quote}</label>
           <input
             id={name}
             name={name}
